@@ -147,7 +147,7 @@
     },
 
     "21.3T": {
-      "nome": "ident_tit_empresa",
+      "nome": "identificacao_titulo",
       "posicao_inicio": 106,
       "posicao_fim": 130,
       "formato": "alfa"

@@ -1,0 +1,348 @@
+{
+  "nome": "TransacaoTipo1",
+  "campos": {
+    "01.3P": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 1
+      },
+
+    "02.3P": {
+      "nome": "tipo_inscricao_empresa",
+      "posicao_inicio": 2,
+      "posicao_fim": 3,
+      "formato": "num"
+    },
+
+    "03.3P": {
+      "nome": "numero_inscricao",
+      "posicao_inicio": 4,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "04.3P": {
+      "nome": "agencia_debito",
+      "posicao_inicio": 18,
+      "posicao_fim": 21,
+      "formato": "num"
+    },
+
+    "05.3P": {
+      "nome": "branco_01",
+      "posicao_inicio": 22,
+      "posicao_fim": 23,
+      "formato": "num",
+      "default": "00"
+    },
+
+    "06.3P": {
+      "nome": "razao_conta_corrente",
+      "posicao_inicio": 24,
+      "posicao_fim": 28,
+      "formato": "num"
+    },
+
+    "07.3P": {
+      "nome": "dac",
+      "posicao_inicio": 29,
+      "posicao_fim": 29,
+      "formato": "num"
+    },
+
+    "08.3P": {
+      "nome": "branco_02",
+      "posicao_inicio": 30,
+      "posicao_fim": 37,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.3P": {
+      "nome": "identificacao_titulo",
+      "posicao_inicio": 38,
+      "posicao_fim": 62,
+      "formato": "alfa"
+    },
+
+    "10.3P": {
+      "nome": "nosso_numero",
+      "posicao_inicio": 63,
+      "posicao_fim": 70,
+      "formato": "num"
+    },
+
+    "11.3P": {
+      "nome": "branco_03",
+      "posicao_inicio": 71,
+      "posicao_fim": 82,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "12.3P": {
+      "nome": "numero_carteira",
+      "posicao_inicio": 83,
+      "posicao_fim": 85,
+      "formato": "num",
+      "default": ""
+    },
+
+    "13.3P": {
+      "nome": "nosso_numero_2",
+      "posicao_inicio": 86,
+      "posicao_fim": 93,
+      "formato": "num"
+    },
+
+    "14.3P": {
+      "nome": "dac_nosso_numero_2",
+      "posicao_inicio": 94,
+      "posicao_fim": 94,
+      "formato": "num"
+    },
+
+    "15.3P": {
+      "nome": "branco_04",
+      "posicao_inicio": 95,
+      "posicao_fim": 107,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.3P": {
+      "nome": "codigo_carteira",
+      "posicao_inicio": 108,
+      "posicao_fim": 108,
+      "formato": "alfa"
+    },
+
+    "17.3P": {
+      "nome": "identificacao_ocorrencia",
+      "posicao_inicio": 109,
+      "posicao_fim": 110,
+      "formato": "num"
+    },
+
+    "18.3P": {
+      "nome": "data_ocorrencia_banco",
+      "posicao_inicio": 111,
+      "posicao_fim": 116,
+      "formato": "num"
+    },
+
+    "19.3P": {
+      "nome": "numero_documento",
+      "posicao_inicio": 117,
+      "posicao_fim": 126,
+      "formato": "alfa"
+    },
+
+    "20.3P": {
+      "nome": "nosso_numero_03",
+      "posicao_inicio": 127,
+      "posicao_fim": 134,
+      "formato": "alfa"
+    },
+
+    "21.3P": {
+      "nome": "branco_05",
+      "posicao_inicio": 135,
+      "posicao_fim": 146,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "22.3P": {
+      "nome": "data_vencimento_titulo",
+      "posicao_inicio": 147,
+      "posicao_fim": 152,
+      "formato": "num"
+    },
+
+    "23.3P": {
+      "nome": "valor_titulo",
+      "posicao_inicio": 153,
+      "posicao_fim": 165,
+      "formato": "num"
+    },
+    
+    "24.3P": {
+      "nome": "banco_cobrador",
+      "posicao_inicio": 166,
+      "posicao_fim": 168,
+      "formato": "num"
+    },
+    
+    "25.3P": {
+      "nome": "agencia_cobradora",
+      "posicao_inicio": 169,
+      "posicao_fim": 172,
+      "formato": "num"
+    },
+
+    "26.3P": {
+      "nome": "dac_agencia",
+      "posicao_inicio": 173,
+      "posicao_fim": 173,
+      "formato": "num"
+    },
+
+    "27.3P": {
+      "nome": "especie_titulo",
+      "posicao_inicio": 174,
+      "posicao_fim": 175,
+      "formato": "alfa"
+    },
+
+    "28.3P": {
+      "nome": "despesas_cobranca_para_codigos_ocorrencia",
+      "posicao_inicio": 176,
+      "posicao_fim": 188,
+      "formato": "num"
+    },
+
+    "29.3P": {
+      "nome": "branco_06",
+      "posicao_inicio": 189,
+      "posicao_fim": 214,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "30.3P": {
+      "nome": "iof_devido",
+      "posicao_inicio": 215,
+      "posicao_fim": 227,
+      "formato": "num"
+    },
+
+    "31.3P": {
+      "nome": "valor_abatimento",
+      "posicao_inicio": 228,
+      "posicao_fim": 240,
+      "formato": "num"
+    },
+
+    "32.3P": {
+      "nome": "valor_desconto",
+      "posicao_inicio": 241,
+      "posicao_fim": 253,
+      "formato": "num"
+    },
+
+    "33.3P": {
+      "nome": "valor_pago",
+      "posicao_inicio": 254,
+      "posicao_fim": 266,
+      "formato": "num"
+    },
+
+    "34.3P": {
+      "nome": "juros_mora",
+      "posicao_inicio": 267,
+      "posicao_fim": 279,
+      "formato": "num"
+    },
+
+    "35.3P": {
+      "nome": "outros_creditos",
+      "posicao_inicio": 280,
+      "posicao_fim": 292,
+      "formato": "num"
+    },
+
+    "36.3P": {
+      "nome": "boleto_dda",
+      "posicao_inicio": 293,
+      "posicao_fim": 293,
+      "formato": "alfa"
+    },
+
+    "37.3P": {
+      "nome": "branco_07",
+      "posicao_inicio": 294,
+      "posicao_fim": 295,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "38.3P": {
+      "nome": "data_credito",
+      "posicao_inicio": 296,
+      "posicao_fim": 301,
+      "formato": "alfa"
+    },
+
+    "39.3P": {
+      "nome": "instrucao_cancelada",
+      "posicao_inicio": 302,
+      "posicao_fim": 305,
+      "formato": "num"
+    },
+
+    "40.3P": {
+      "nome": "branco_08",
+      "posicao_inicio": 306,
+      "posicao_fim": 311,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "41.3P": {
+      "nome": "branco_09",
+      "posicao_inicio": 312,
+      "posicao_fim": 324,
+      "formato": "num",
+      "default": "0"
+    },
+
+    "42.3P": {
+      "nome": "nome_pagador",
+      "posicao_inicio": 325,
+      "posicao_fim": 354,
+      "formato": "alfa"
+    },
+
+    "43.3P": {
+      "nome": "branco_10",
+      "posicao_inicio": 355,
+      "posicao_fim": 377,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "44.3P": {
+      "nome": "erros_mensagem_info",
+      "posicao_inicio": 378,
+      "posicao_fim": 385,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "45.3P": {
+      "nome": "branco_11",
+      "posicao_inicio": 386,
+      "posicao_fim": 392,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "46.3P": {
+      "nome": "codigo_liquidacao",
+      "posicao_inicio": 393,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "47.3P": {
+      "nome": "sequencial_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }  
+  }
+}

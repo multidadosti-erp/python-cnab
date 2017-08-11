@@ -140,7 +140,7 @@
     },
 
     "19.3U": {
-      "nome": "ocorr_pag_data",
+      "nome": "ocorrencia_data",
       "posicao_inicio": 158,
       "posicao_fim": 165,
       "formato": "alfa"

@@ -32,14 +32,14 @@
     },
 
     "05.3P": {
-      "nome": "identificacao_empresa_cedente_banco",
+      "nome": "razao_conta_corrente",
       "posicao_inicio": 21,
       "posicao_fim": 37,
       "formato": "alfa"
     },
 
     "06.3P": {
-      "nome": "controle_participante",
+      "nome": "identificacao_titulo",
       "posicao_inicio": 38,
       "posicao_fim": 62,
       "formato": "alfa"
@@ -54,7 +54,7 @@
     },
 
     "08.3P": {
-      "nome": "identificacao_titulo_banco",
+      "nome": "nosso_numero",
       "posicao_inicio": 71,
       "posicao_fim": 82,
       "formato": "alfa"
@@ -256,7 +256,7 @@
     },
 
     "36.3P": {
-      "nome": "motivo_rejeicao_ocorrencia_109_110",
+      "nome": "erros_mensagem_info",
       "posicao_inicio": 319,
       "posicao_fim": 328,
       "formato": "alfa"

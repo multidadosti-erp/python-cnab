@@ -116,7 +116,8 @@
       "nome": "identificacao_ocorrencia",
       "posicao_inicio": 109,
       "posicao_fim": 110,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "17.3P": {

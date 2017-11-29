@@ -223,9 +223,9 @@ class Arquivo(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, header, **kwargs):
+    def incluir_cobranca(self, codigo_evento=None, **kwargs):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1
+        codigo_evento = 1 if codigo_evento is None else codigo_evento
         evento = Evento(self.banco, codigo_evento)
 
         seg_p = self.banco.registros.SegmentoP(**kwargs)
@@ -379,9 +379,9 @@ class ArquivoCobranca400(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, **kwargs):
+    def incluir_cobranca(self, codigo_evento=None, **kwargs):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1
+        codigo_evento = 1 if codigo_evento is None else codigo_evento
         evento = Evento(self.banco, codigo_evento)
 
         trans_tp1 = self.banco.registros.TransacaoTipo1(**kwargs)

@@ -223,18 +223,18 @@ class Arquivo(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, codigo_evento=None, **kwargs):
+    def incluir_cobranca(self, header, segment):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1 if codigo_evento is None else codigo_evento
+        codigo_evento = 1
         evento = Evento(self.banco, codigo_evento)
 
-        seg_p = self.banco.registros.SegmentoP(**kwargs)
+        seg_p = self.banco.registros.SegmentoP(**segment)
         evento.adicionar_segmento(seg_p)
 
-        seg_q = self.banco.registros.SegmentoQ(**kwargs)
+        seg_q = self.banco.registros.SegmentoQ(**segment)
         evento.adicionar_segmento(seg_q)
 
-        seg_r = self.banco.registros.SegmentoR(**kwargs)
+        seg_r = self.banco.registros.SegmentoR(**segment)
         if seg_r.necessario():
             evento.adicionar_segmento(seg_r)
 
@@ -379,12 +379,12 @@ class ArquivoCobranca400(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, codigo_evento=None, **kwargs):
+    def incluir_cobranca(self, segment):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1 if codigo_evento is None else codigo_evento
+        codigo_evento = 1
         evento = Evento(self.banco, codigo_evento)
 
-        trans_tp1 = self.banco.registros.TransacaoTipo1(**kwargs)
+        trans_tp1 = self.banco.registros.TransacaoTipo1(**segment)
         evento.adicionar_segmento(trans_tp1)
 
         lote_cobranca = self.encontrar_lote(codigo_evento)

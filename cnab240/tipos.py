@@ -410,7 +410,7 @@ class ArquivoCobranca400(object):
         self._lotes.append(lote)
         lote.codigo = len(self._lotes)
 
-        if self.trailer != None:
+        if not self.trailer:
             if hasattr(self.trailer, 'totais_quantidade_lotes'):
                 # Incrementar numero de lotes no trailer do arquivo
                 self.trailer.totais_quantidade_lotes += 1
@@ -420,16 +420,16 @@ class ArquivoCobranca400(object):
                 self.trailer.totais_quantidade_registros += len(lote)
 
     def escrever(self, file_):
-        file_.write(unicode(self).encode('ascii'))
+        file_.write(self.encode('ascii'))
 
     def __unicode__(self):
         if not self._lotes:
             raise errors.ArquivoVazioError()
 
         result = []
-        result.append(unicode(self.header))
-        result.extend(unicode(lote) for lote in self._lotes)
-        result.append(unicode(self.trailer))
+        result.append(self.header)
+        result.extend(lote for lote in self._lotes)
+        result.append(self.trailer)
         # Adicionar elemento vazio para arquivo terminar com \r\n
         result.append(u'')
         return u'\r\n'.join(result)

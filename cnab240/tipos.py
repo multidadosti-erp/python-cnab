@@ -419,14 +419,14 @@ class ArquivoCobranca400(object):
     def escrever(self, file_):
         file_.write(self.encode('ascii'))
 
-    def __unicode__(self):
+    def __str__(self):
         if not self._lotes:
             raise errors.ArquivoVazioError()
 
         result = []
-        result.append(self.header)
-        result.extend(lote for lote in self._lotes)
-        result.append(self.trailer)
+        result.append(str(self.header))
+        result.extend(str(lote) for lote in self._lotes)
+        result.append(str(self.trailer))
         # Adicionar elemento vazio para arquivo terminar com \r\n
-        result.append(u'')
-        return u'\r\n'.join(result)
+        result.append('')
+        return '\r\n'.join(result)

@@ -34,8 +34,7 @@
       "nome": "branco_01",
       "posicao_inicio": 22,
       "posicao_fim": 23,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "06.3P": {

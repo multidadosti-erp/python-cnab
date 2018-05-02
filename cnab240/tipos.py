@@ -223,20 +223,27 @@ class Arquivo(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, header, segment):
+    def incluir_cobranca(self, header, segment, back=False):
         # 1 eh o codigo de cobranca
         codigo_evento = 1
         evento = Evento(self.banco, codigo_evento)
 
-        seg_p = self.banco.registros.SegmentoP(**segment)
-        evento.adicionar_segmento(seg_p)
+        if back:
+            seg_T = self.banco.registros.SegmentoT(**segment)
+            evento.adicionar_segmento(seg_T)
 
-        seg_q = self.banco.registros.SegmentoQ(**segment)
-        evento.adicionar_segmento(seg_q)
+            seg_U = self.banco.registros.SegmentoU(**segment)
+            evento.adicionar_segmento(seg_U)
+        else:
+            seg_p = self.banco.registros.SegmentoP(**segment)
+            evento.adicionar_segmento(seg_p)
 
-        seg_r = self.banco.registros.SegmentoR(**segment)
-        if seg_r.necessario():
-            evento.adicionar_segmento(seg_r)
+            seg_q = self.banco.registros.SegmentoQ(**segment)
+            evento.adicionar_segmento(seg_q)
+
+            seg_r = self.banco.registros.SegmentoR(**segment)
+            if seg_r.necessario():
+                evento.adicionar_segmento(seg_r)       
 
         lote_cobranca = self.encontrar_lote(codigo_evento)
 
@@ -338,7 +345,7 @@ class ArquivoCobranca400(object):
 
         if self.header.arquivo_data_de_geracao is None:
             now = datetime.now()
-            self.header.arquivo_data_de_geracao = int(now.strftime("%d%m%Y"))
+            self.header.arquivo_data_de_geracao = int(now.strftime("%d%m%y"))
 
     def carregar_retorno(self, arquivo):
 
@@ -376,7 +383,7 @@ class ArquivoCobranca400(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, segment):
+    def incluir_cobranca(self, segment, back=False):
         # 1 eh o codigo de cobranca
         codigo_evento = 1
         evento = Evento(self.banco, codigo_evento)

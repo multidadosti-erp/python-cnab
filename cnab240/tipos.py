@@ -340,6 +340,10 @@ class ArquivoCobranca400(object):
         self._lotes = []
         self.banco = banco
 
+        arquivo = kwargs.get('arquivo')
+        if isinstance(arquivo, (IOBase, codecs.StreamReaderWriter)):
+            return self.carregar_retorno(arquivo)
+
         self.header = self.banco.registros.HeaderArquivo(**kwargs)
         self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
 

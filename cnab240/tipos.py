@@ -225,7 +225,7 @@ class Arquivo(object):
 
     def incluir_cobranca(self, header, segment, back=False):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1
+        codigo_evento = segment['servico_codigo_movimento'] or 1
         evento = Evento(self.banco, codigo_evento)
 
         if back:
@@ -385,7 +385,7 @@ class ArquivoCobranca400(object):
 
     def incluir_cobranca(self, segment, back=False):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1
+        codigo_evento = segment['identificacao_ocorrencia'] or 1
         evento = Evento(self.banco, codigo_evento)
 
         trans_tp1 = self.banco.registros.TransacaoTipo1(**segment)

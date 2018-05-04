@@ -58,48 +58,42 @@
       "nome": "titulo_acrescimos",
       "posicao_inicio": 18,
       "posicao_fim": 32,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "09.3U": {
       "nome": "titulo_desconto",
       "posicao_inicio": 33,
       "posicao_fim": 47,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "10.3U": {
       "nome": "titulo_abatimento",
       "posicao_inicio": 48,
       "posicao_fim": 62,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "11.3U": {
       "nome": "titulo_iof",
       "posicao_inicio": 63,
       "posicao_fim": 77,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "12.3U": {
       "nome": "titulo_pago",
       "posicao_inicio": 78,
       "posicao_fim": 92,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "13.3U": {
       "nome": "titulo_liquido",
       "posicao_inicio": 93,
       "posicao_fim": 107,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "14.3U": {
@@ -142,8 +136,7 @@
       "nome": "ocorrencia_valor",
       "posicao_inicio": 166,
       "posicao_fim": 180,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "20.3U": {

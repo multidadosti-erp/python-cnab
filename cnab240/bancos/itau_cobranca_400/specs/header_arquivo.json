@@ -119,7 +119,7 @@
     },
 
     "16.0": {
-      "nome": "sequencial_registro_um_um",
+      "nome": "num_seq_registro",
       "posicao_inicio": 395,
       "posicao_fim": 400,
       "formato": "num",

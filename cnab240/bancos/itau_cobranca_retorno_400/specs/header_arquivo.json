@@ -54,7 +54,7 @@
       "posicao_inicio": 31,
       "posicao_fim": 32,
       "formato": "num",
-      "default": "00"
+      "default": 0
     },
 
     "08.0": {
@@ -140,7 +140,7 @@
     },
 
     "19.0": {
-      "nome": "branco_02",
+      "nome": "branco_03",
       "posicao_inicio": 120,
       "posicao_fim": 394,
       "formato": "alfa",
@@ -148,7 +148,7 @@
     },
 
     "20.0":{
-      "nome": "numero_sequencial_registro",
+      "nome": "num_seq_registro",
       "posicao_inicio": 395,
       "posicao_fim": 400,
       "formato": "num"

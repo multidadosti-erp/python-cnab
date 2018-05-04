@@ -161,8 +161,7 @@
       "nome": "valor_titulo",
       "posicao_inicio": 82,
       "posicao_fim": 96,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "23.3T": {
@@ -243,8 +242,7 @@
       "nome": "valor_tarifas",
       "posicao_inicio": 199,
       "posicao_fim": 213,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "34.3T": {

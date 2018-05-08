@@ -128,7 +128,7 @@
       "nome": "data_ocorrencia_banco",
       "posicao_inicio": 111,
       "posicao_fim": 116,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "19.3P": {
@@ -271,7 +271,7 @@
       "nome": "data_credito",
       "posicao_inicio": 296,
       "posicao_fim": 301,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "39.3P": {

@@ -171,7 +171,8 @@
       "nome": "banco_cobrador",
       "posicao_inicio": 166,
       "posicao_fim": 168,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
     
     "25.3P": {

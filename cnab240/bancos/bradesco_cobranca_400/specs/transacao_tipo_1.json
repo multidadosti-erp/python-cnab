@@ -10,38 +10,43 @@
       },
 
     "02.3P": {
-      "nome": "agencia_debito",
+      "nome": "agencia_debito_automatico",
       "posicao_inicio": 2,
       "posicao_fim": 6,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "03.3P": {
-      "nome": "agencia_debito_dv",
+      "nome": "agencia_debito_automatico_dv",
       "posicao_inicio": 7,
       "posicao_fim": 7,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "04.3P": {
-      "nome": "razao_conta_corrente",
+      "nome": "razao_conta_corrente_automatico",
       "posicao_inicio": 8,
       "posicao_fim": 12,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "05.3P": {
-      "nome": "sacado_cc",
+      "nome": "sacado_cc_automatico",
       "posicao_inicio": 13,
       "posicao_fim": 19,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "06.3P": {
-      "nome": "sacado_cc_dv",
+      "nome": "sacado_cc__automatico_dv",
       "posicao_inicio": 20,
       "posicao_fim": 20,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "0"
     },
 
     "07.3P": {
@@ -52,7 +57,7 @@
     },
 
     "08.3P": {
-      "nome": "participante_controle",
+      "nome": "identificacao_titulo",
       "posicao_inicio": 38,
       "posicao_fim": 62,
       "formato": "alfa"
@@ -62,7 +67,8 @@
       "nome": "codigo_banco_debitado_camara_compensacao",
       "posicao_inicio": 63,
       "posicao_fim": 65,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "10.3P": {
@@ -71,7 +77,7 @@
       "posicao_fim": 66,
       "formato": "num"
     },
-    
+
     "11.3P": {
       "nome": "percentual_multa",
       "posicao_inicio": 67,
@@ -84,7 +90,7 @@
       "nome": "identificacao_titulo_banco",
       "posicao_inicio": 71,
       "posicao_fim": 81,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "13.3P": {
@@ -112,11 +118,12 @@
       "nome": "identificacao_boleto_debito_automatico",
       "posicao_inicio": 94,
       "posicao_fim": 94,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "N"
     },
 
     "17.3P": {
-      "nome": "identificacao_operacao_banco",
+      "nome": "brancos",
       "posicao_inicio": 95,
       "posicao_fim": 104,
       "formato": "alfa",
@@ -127,31 +134,33 @@
       "nome": "indicador_rateio_credito",
       "posicao_inicio": 105,
       "posicao_fim": 105,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "19.3P": {
       "nome": "enderecamento_aviso_debito_automatico_cc",
       "posicao_inicio": 106,
       "posicao_fim": 106,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "2"
     },
 
     "20.3P": {
-      "nome": "brancos",
+      "nome": "quantidade_pagamentos",
       "posicao_inicio": 107,
       "posicao_fim": 108,
       "formato": "alfa",
       "default": ""
     },
-    
+
     "21.3P": {
       "nome": "identificacao_ocorrencia",
       "posicao_inicio": 109,
       "posicao_fim": 110,
       "formato": "num"
     },
-    
+
     "22.3P": {
       "nome": "numero_documento",
       "posicao_inicio": 111,
@@ -216,14 +225,16 @@
       "nome": "primeira_instrucao",
       "posicao_inicio": 157,
       "posicao_fim": 158,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "31.3P": {
       "nome": "segunda_instrucao",
       "posicao_inicio": 159,
       "posicao_fim": 160,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "32.3P": {
@@ -246,7 +257,8 @@
       "posicao_inicio": 180,
       "posicao_fim": 192,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.00
     },
 
     "35.3P": {
@@ -254,7 +266,8 @@
       "posicao_inicio": 193,
       "posicao_fim": 205,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.00
     },
 
     "36.3P": {
@@ -262,7 +275,8 @@
       "posicao_inicio": 206,
       "posicao_fim": 218,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0.00
     },
 
     "37.3P": {
@@ -271,7 +285,7 @@
       "posicao_fim": 220,
       "formato": "num"
     },
-    
+
     "38.3P": {
       "nome": "sacado_inscricao_numero",
       "posicao_inicio": 221,
@@ -287,7 +301,7 @@
     },
 
     "40.3P": {
-      "nome": "sacado_endereco",
+      "nome": "sacado_logradouro",
       "posicao_inicio": 275,
       "posicao_fim": 314,
       "formato": "alfa"
@@ -303,13 +317,6 @@
     "42.3P": {
       "nome": "sacado_cep",
       "posicao_inicio": 327,
-      "posicao_fim": 331,
-      "formato": "num"
-    },
-
-    "43.3P": {
-      "nome": "sacado_cep_sufixo",
-      "posicao_inicio": 332,
       "posicao_fim": 334,
       "formato": "num"
     },

@@ -185,12 +185,10 @@ class RegistroBase(object):
                 try:
                     campo.valor = int(valor)
                 except ValueError:
-                    # Se tiver campo default, não gera o Erro para dar sequencia
-                    # na importação do CNAB
                     if campo.default is not None:
                         campo.valor = campo.default
                     else:
-                        raise errors.TipoError(campo, valor)
+                        campo.valor = 0
             else:
                 campo.valor = valor
 

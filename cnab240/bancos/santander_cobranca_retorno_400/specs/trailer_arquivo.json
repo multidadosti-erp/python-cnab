@@ -1,0 +1,145 @@
+{
+    "nome": "TrailerArquivo",
+    "campos": {
+      "01.9": {
+        "nome": "identificacao_registro",
+        "posicao_inicio": 1,
+        "posicao_fim": 1,
+        "formato": "num",
+        "default": 9
+        },
+
+      "02.9": {
+        "nome": "indentificacao_retorno",
+        "posicao_inicio": 2,
+        "posicao_fim": 2,
+        "formato": "num",
+        "default": 2
+      },
+
+      "03.9": {
+        "nome": "identificacao_tipo_registro",
+        "posicao_inicio": 3,
+        "posicao_fim": 4,
+        "formato": "num",
+        "default": 1
+      },
+
+      "04.9": {
+        "nome": "codigo_banco",
+        "posicao_inicio": 5,
+        "posicao_fim": 7,
+        "formato": "num",
+        "default": 33
+      },
+
+      "05.9": {
+        "nome": "branco_01",
+        "posicao_inicio": 8,
+        "posicao_fim": 17,
+        "formato": "alfa",
+        "default": ""
+      },
+
+      "06.9": {
+        "nome": "quantidade_titulos_cobranca",
+        "posicao_inicio": 18,
+        "posicao_fim": 25,
+        "formato": "num"
+      },
+
+      "07.9": {
+        "nome": "valor_total_cobranca",
+        "posicao_inicio": 26,
+        "posicao_fim": 39,
+        "formato": "num"
+      },
+
+      "08.9": {
+        "nome": "numero_aviso_bancario",
+        "posicao_inicio": 40,
+        "posicao_fim": 47,
+        "formato": "alfa"
+      },
+
+      "09.9": {
+        "nome": "branco_02",
+        "posicao_inicio": 48,
+        "posicao_fim": 97,
+        "formato": "alfa",
+        "default": ""
+      },
+
+      "10.9": {
+        "nome": "quantidade_titulos_cobranca_vinculada",
+        "posicao_inicio": 98,
+        "posicao_fim": 105,
+        "formato": "num"
+      },
+
+      "11.9": {
+        "nome": "valor_titulos_cobranca_vinculada",
+        "posicao_inicio": 106,
+        "posicao_fim": 119,
+        "formato": "num"
+      },
+
+      "12.9": {
+        "nome": "numero_aviso_bancario_2",
+        "posicao_inicio": 120,
+        "posicao_fim": 127,
+        "formato": "alfa"
+      },
+
+      "13.9": {
+        "nome": "branco_03",
+        "posicao_inicio": 128,
+        "posicao_fim": 137,
+        "formato": "alfa",
+        "default": ""
+      },
+
+      "14.9": {
+        "nome": "quantidade_titulos_cobranca_descontada",
+        "posicao_inicio": 138,
+        "posicao_fim": 145,
+        "formato": "num"
+      },
+
+      "15.9": {
+        "nome": "valor_titulos_cobranca_descontada",
+        "posicao_inicio": 146,
+        "posicao_fim": 159,
+        "formato": "num"
+      },
+
+      "16.9": {
+        "nome": "numero_aviso_cobranca_descontada",
+        "posicao_inicio": 160,
+        "posicao_fim": 167,
+        "formato": "alfa"
+      },
+
+      "17.9": {
+        "nome": "branco_04",
+        "posicao_inicio": 168,
+        "posicao_fim": 391,
+        "formato": "alfa",
+        "default": ""
+      },
+
+      "18.0": {
+        "nome": "numero_versao",
+        "posicao_inicio": 392,
+        "posicao_fim": 394,
+        "formato": "alfa"
+      },
+
+      "19.9": {
+        "nome": "num_seq_registro",
+        "posicao_inicio": 395,
+        "posicao_fim": 400,
+        "formato": "num"
+      }
+    }
+  }

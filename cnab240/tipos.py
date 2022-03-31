@@ -243,7 +243,7 @@ class Arquivo(object):
 
             seg_r = self.banco.registros.SegmentoR(**segment)
             if seg_r.necessario():
-                evento.adicionar_segmento(seg_r)       
+                evento.adicionar_segmento(seg_r)
 
         lote_cobranca = self.encontrar_lote(codigo_evento)
 
@@ -262,6 +262,7 @@ class Arquivo(object):
                 header.controlecob_data_gravacao = self.header.arquivo_data_de_geracao
 
         lote_cobranca.adicionar_evento(evento)
+
         # Incrementar numero de registros no trailer do arquivo
         self.trailer.totais_quantidade_registros += len(evento)
 

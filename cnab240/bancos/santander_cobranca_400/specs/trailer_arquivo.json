@@ -1,0 +1,43 @@
+{
+  "nome": "TrailerArquivo",
+  "campos": {
+    "01.9": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 9
+      },
+
+    "02.9": {
+        "nome": "totais_quantidade_registros",
+        "posicao_inicio": 2,
+        "posicao_fim": 7,
+        "formato": "num",
+        "default": 2
+    },
+
+    "03.9": {
+        "nome": "totais_valor_registros",
+        "posicao_inicio": 8,
+        "posicao_fim": 20,
+        "formato": "num",
+        "decimais": 2
+    },
+
+    "04.9": {
+      "nome": "branco_374",
+      "posicao_inicio": 21,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": "0"
+    },
+
+    "05.9": {
+      "nome": "num_seq_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }
+  }
+}

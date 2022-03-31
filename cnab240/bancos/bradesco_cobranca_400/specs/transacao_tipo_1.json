@@ -75,7 +75,8 @@
       "nome": "campo_multa",
       "posicao_inicio": 66,
       "posicao_fim": 66,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "11.3P": {

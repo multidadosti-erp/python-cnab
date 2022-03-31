@@ -97,7 +97,13 @@ class CampoBase(object):
             else:
                 valor = self.valor
                 chars_faltantes = self.digitos - len(valor)
-                return valor + (' ' * chars_faltantes)
+
+                if hasattr(self, 'default') and self.default is not None and len(self.default) == 1:
+                    res = valor + (self.default * chars_faltantes)
+                else:
+                    res = valor + (' ' * chars_faltantes)
+
+                return res
 
         return '{0:0{1}d}'.format(self.valor, self.digitos)
 

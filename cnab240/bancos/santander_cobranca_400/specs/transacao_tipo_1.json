@@ -50,14 +50,14 @@
         "posicao_inicio": 70,
         "posicao_fim": 70,
         "formato": "num"
-      },
+    },
 
     "08.3P": {
       "nome": "branco_03",
       "posicao_inicio": 71,
       "posicao_fim": 76,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     },
 
     "09.3P": {

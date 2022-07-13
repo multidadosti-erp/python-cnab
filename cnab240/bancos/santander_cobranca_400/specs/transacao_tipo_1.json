@@ -105,8 +105,7 @@
         "nome": "brancos_4",
         "posicao_inicio": 98,
         "posicao_fim": 101,
-        "formato": "num",
-        "default": 0
+        "formato": "alfa"
     },
 
     "15.3P": {
@@ -158,8 +157,8 @@
       "nome": "banco_encarregado_cobranca",
       "posicao_inicio": 140,
       "posicao_fim": 142,
-      "formato": "num",
-      "default": 341
+      "formato": "alfa",
+      "default": "033"
     },
 
     "22.3P": {

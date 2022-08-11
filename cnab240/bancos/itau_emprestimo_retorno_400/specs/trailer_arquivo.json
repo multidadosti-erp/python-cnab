@@ -1,0 +1,73 @@
+{
+  "nome": "TrailerArquivo",
+  "campos": {
+    "01.9": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 9
+      },
+
+    "02.9": {
+      "nome": "indentificacao_retorno",
+      "posicao_inicio": 2,
+      "posicao_fim": 2,
+      "formato": "num",
+      "default": 2
+    },
+
+    "03.9": {
+      "nome": "identificacao_tipo_registro",
+      "posicao_inicio": 3,
+      "posicao_fim": 4,
+      "formato": "num",
+      "default": 4
+    },
+
+    "04.9": {
+      "nome": "codigo_banco",
+      "posicao_inicio": 5,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 341
+    },
+
+    "05.9": {
+      "nome": "branco_01",
+      "posicao_inicio": 8,
+      "posicao_fim": 212,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "06.9": {
+      "nome": "quantidade_detalhes",
+      "posicao_inicio": 213,
+      "posicao_fim": 220,
+      "formato": "num"
+    },
+
+    "07.9": {
+      "nome": "valor_total",
+      "posicao_inicio": 221,
+      "posicao_fim": 234,
+      "formato": "num"
+    },
+
+    "08.9": {
+      "nome": "branco_04",
+      "posicao_inicio": 235,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.9": {
+      "nome": "num_seq_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }
+  }
+}

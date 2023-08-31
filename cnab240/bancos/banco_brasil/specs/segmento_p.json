@@ -203,7 +203,8 @@
       "nome": "juros_cod_mora",
       "posicao_inicio": 118,
       "posicao_fim": 118,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "28.3P": {

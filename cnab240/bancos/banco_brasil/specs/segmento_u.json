@@ -133,21 +133,21 @@
     },
 
     "18.3U": {
-      "nome": "ocorr_pag_cod",
+      "nome": "ocorrencia_codigo",
       "posicao_inicio": 154,
       "posicao_fim": 157,
       "formato": "alfa"
     },
 
     "19.3U": {
-      "nome": "ocorr_pag_data",
+      "nome": "ocorrencia_data",
       "posicao_inicio": 158,
       "posicao_fim": 165,
       "formato": "alfa"
     },
 
     "20.3U": {
-      "nome": "ocorr_pag_valor",
+      "nome": "ocorrencia_valor",
       "posicao_inicio": 166,
       "posicao_fim": 180,
       "formato": "num",
@@ -155,7 +155,7 @@
     },
 
     "21.3U": {
-      "nome": "ocorr_pag_compl",
+      "nome": "ocorrencia_complemento",
       "posicao_inicio": 181,
       "posicao_fim": 210,
       "formato": "alfa"

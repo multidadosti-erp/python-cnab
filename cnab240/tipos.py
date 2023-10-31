@@ -248,15 +248,26 @@ class Arquivo(object):
         lote_cobranca = self.encontrar_lote(codigo_evento)
 
         if lote_cobranca is None:
+            # Ajustando o Serviço
+            if 'servico_servico' in header:
+                servico_servico = header['servico_servico']
+            else:
+                servico_servico = 1 # Default dos Bancos CNAB 240
+
+            # Preparando o Header da Cobrança
             header = self.banco.registros.HeaderLoteCobranca(**header)
+            if hasattr(header, 'servico_servico'):
+                header.servico_servico = servico_servico
+
             trailer = self.banco.registros.TrailerLoteCobranca()
+
             lote_cobranca = Lote(self.banco, header, trailer)
+
+            # Adiciona Lote de Cobrança
             self.adicionar_lote(lote_cobranca)
 
             if "controlecob_numero" not in dir(header):
-                header.controlecob_numero = int('{0}{1:02}'.format(
-                    self.header.arquivo_sequencia,
-                    lote_cobranca.codigo))
+                header.controlecob_numero = int('{0}{1:02}'.format(self.header.arquivo_sequencia,lote_cobranca.codigo))
 
             if "controlecob_data_gravacao" not in dir(header):
                 header.controlecob_data_gravacao = self.header.arquivo_data_de_geracao

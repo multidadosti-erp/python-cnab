@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.5": {
@@ -33,14 +33,14 @@
     },
 
     "05.5": {
-      "nome": "qtde_reg",
+      "nome": "quantidade_registros",
       "posicao_inicio": 18,
       "posicao_fim": 23,
       "formato": "num"
     },
 
     "06.5": {
-      "nome": "tot_cobranca_simples_qtde",
+      "nome": "cobrancasimples_quantidade_titulos",
       "posicao_inicio": 24,
       "posicao_fim": 29,
       "formato": "num"

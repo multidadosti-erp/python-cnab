@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.3P": {
@@ -93,7 +93,7 @@
       "nome": "identificacao_titulo_banco",
       "posicao_inicio": 38,
       "posicao_fim": 57,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "14.3P": {
@@ -114,7 +114,7 @@
       "nome": "cobranca_documentoTipo",
       "posicao_inicio": 60,
       "posicao_fim": 60,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "17.3P": {
@@ -128,7 +128,7 @@
       "nome": "cobranca_distribuicaoBloqueto",
       "posicao_inicio": 62,
       "posicao_fim": 62,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "19.3P": {
@@ -288,7 +288,8 @@
       "nome": "codigo_moeda",
       "posicao_inicio": 228,
       "posicao_fim": 229,
-      "formato": "num"
+      "formato": "num",
+      "default": 9
     },
 
     "41.3P": {

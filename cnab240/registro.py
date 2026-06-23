@@ -3,11 +3,15 @@ import os
 import json
 import unicodedata
 import re
+import logging
 
 from glob import iglob
 from decimal import Decimal
 from collections import OrderedDict
 from cnab240 import errors
+
+
+logger = logging.getLogger(__name__)
 
 
 class CampoBase(object):
@@ -35,37 +39,37 @@ class CampoBase(object):
 
         if self.formato == 'alfa':
             if not isinstance(valor, str):
-                print("{0} - {1}".format(self.nome, valor))
+                logger.error("%s - %s", self.nome, valor)
                 raise errors.TipoError(self, valor)
 
             valor = self._normalize_str(valor)
 
             if len(valor) > self.digitos:
-                print("truncating - {0}".format(self.nome))
+                logger.info("truncating - %s", self.nome)
                 # reduz o len(valor)
                 cortar = len(valor) - self.digitos
                 valor = valor[:-(cortar)]
 
         elif self.decimais:
             if not isinstance(valor, Decimal):
-                print("{0} - {1}".format(self.nome, valor))
+                logger.error("%s - %s", self.nome, valor)
                 raise errors.TipoError(self, valor)
 
             num_decimais = valor.as_tuple().exponent * -1
             if num_decimais != self.decimais:
-                print("{0} - {1}".format(self.nome, valor))
+                logger.error("%s - %s", self.nome, valor)
                 raise errors.NumDecimaisError(self, valor)
 
             if len(str(valor).replace('.', '')) > self.digitos:
-                print("{0} - {1}".format(self.nome, valor))
+                logger.error("%s - %s", self.nome, valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         else:
             if not isinstance(valor, int):
-                print("{0} - {1}".format(self.nome, valor))
+                logger.error("%s - %s", self.nome, valor)
                 raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
-                print("{0} - {1}".format(self.nome, valor))
+                logger.error("%s - %s", self.nome, valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         self._valor = valor
